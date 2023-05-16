@@ -68,6 +68,14 @@ extension Set where Element: Identifiable {
             insert(element)
         }
     }
+    
+    func contains(matching element: Element) -> Bool {
+        if let _ = index(matching: element) {
+            return true
+        } else {
+           return false
+        }
+    }
 }
 
 // some extensions to String and Character

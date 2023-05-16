@@ -82,4 +82,8 @@ class EmojiArtDocument: ObservableObject {
     
         }
     }
+    
+    func removeEmoji(_ emoji: EmojiArtModel.Emoji) {
+        emojiArt.emojis.remove(emoji)
+    }
 }
